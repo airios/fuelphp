@@ -6,42 +6,42 @@
  * @ignore
  */
 
-namespace Classes\Application
+namespace Fuel\Aliases\Application
 {
 	abstract class Base extends \Fuel\Kernel\Application\Base {}
 }
 
-namespace Classes\Controller
+namespace Fuel\Aliases\Controller
 {
 	class Base extends \Fuel\Kernel\Controller\Base {}
 
 	class Template extends \Fuel\Core\Controller\Template {}
 }
 
-namespace Classes\Data
+namespace Fuel\Aliases\Data
 {
 	abstract class Base extends \Fuel\Kernel\Data\Base {}
 	class Config extends \Fuel\Kernel\Data\Config {}
 	class Language extends \Fuel\Kernel\Data\Language {}
 }
 
-namespace Classes\DiC
+namespace Fuel\Aliases\DiC
 {
 	class Base extends \Fuel\Kernel\DiC\Base {}
 }
 
-namespace Classes\Loader
+namespace Fuel\Aliases\Loader
 {
 	interface Loadable extends \Fuel\Kernel\Loader\Loadable {}
 	class Package extends \Fuel\Kernel\Loader\Package {}
 }
 
-namespace Classes\Presenter
+namespace Fuel\Aliases\Presenter
 {
 	abstract class Base extends \Fuel\Kernel\Presenter\Base {}
 }
 
-namespace Classes\Request
+namespace Fuel\Aliases\Request
 {
 	abstract class Base extends \Fuel\Kernel\Request\Base {}
 	class Fuel extends \Fuel\Kernel\Request\Fuel {}
@@ -49,12 +49,17 @@ namespace Classes\Request
 	class Curl extends \Fuel\Core\Request\Curl {}
 }
 
-namespace Classes\Response
+namespace Fuel\Aliases\Request\Exception
+{
+	class Base extends \Fuel\Kernel\Request\Exception\Base {}
+}
+
+namespace Fuel\Aliases\Response
 {
 	class Base extends \Fuel\Kernel\Response\Base {}
 }
 
-namespace Classes\Route
+namespace Fuel\Aliases\Route
 {
 	abstract class Base extends \Fuel\Kernel\Route\Base {}
 	class Fuel extends \Fuel\Kernel\Route\Fuel {}
@@ -62,12 +67,22 @@ namespace Classes\Route
 	class Task extends \Fuel\Kernel\Route\Task {}
 }
 
-namespace Classes\Task
+namespace Fuel\Aliases\Security\Csrf
+{
+	abstract class Base extends \Fuel\Kernel\Security\Csrf\Base {}
+}
+
+namespace Fuel\Aliases\Security\String
+{
+	abstract class Base extends \Fuel\Kernel\Security\String\Base {}
+}
+
+namespace Fuel\Aliases\Task
 {
 	class Base extends \Fuel\Kernel\Task\Base {}
 }
 
-namespace Classes\View
+namespace Fuel\Aliases\View
 {
 	class Base extends \Fuel\Kernel\View\Base {}
 }

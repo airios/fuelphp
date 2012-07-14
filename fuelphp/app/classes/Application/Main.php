@@ -7,8 +7,8 @@
 
 namespace App\Application;
 use Fuel\Kernel\Data\Config;
-use Classes\Application;
-use Classes\Route\Fuel as Route;
+use Fuel\Aliases\Application;
+use Fuel\Aliases\Route\Fuel as Route;
 
 /**
  * Application class
@@ -37,7 +37,7 @@ class Main extends Application\Base
 		$this->routes = array();
 
 		// Change default Route class for DiC forge
-		$this->dic->setClass('Route', 'Fuel\\Kernel\\Route\\Task');
+		$this->dic->setClass('Route', 'Fuel\Kernel\Route\Task');
 
 		// Add Task routes
 		$this->addRoute('(.*)', '$1');

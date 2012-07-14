@@ -6,7 +6,7 @@
  */
 
 // Forge and return your Application Package object
-return $env->forge('Loader.Package')
+return $env->forge('Loader')
 	->setRoutable(true)
 	->setPath(__DIR__)
 	->setNamespace('App')

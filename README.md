@@ -54,7 +54,7 @@ First of all we'll keep the global namespace clean from now on (except when you 
 'inheritance injection' to the global namespace was very powerful. Allowing you, for example, to extend the base
 Controller and have its extensions available in the `Controller_Template` and `Controller_Rest` as well (as those extend
 the alias, not the original classname).  
-For that reason we still provide these aliases but they're aliased to a `Classes\` namespace.
+For that reason we still provide these aliases but they're aliased to a `Fuel\Aliases\` namespace.
 
 Next we implemented a DiC. This will be available globally and Application specific, where the Application DiC will
 fallback to the environment DiC when something unknown is requested. Below are the most important methods relating to

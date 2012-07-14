@@ -2,9 +2,9 @@
 
 namespace App\Presenter;
 use Fuel\Kernel\Environment;
-use Classes;
+use Fuel\Aliases;
 
-class Welcome extends Classes\Presenter\Base
+class Welcome extends Aliases\Presenter\Base
 {
 	public function view()
 	{

@@ -6,7 +6,7 @@
  */
 
 namespace App\Task;
-use Classes;
+use Fuel\Aliases;
 
 /**
  * Example Task
@@ -17,7 +17,7 @@ use Classes;
  *
  * @package  App
  */
-class Test extends Classes\Task\Base
+class Test extends Aliases\Task\Base
 {
 	/**
 	 * Return a simple string for commandline output

@@ -3,13 +3,13 @@
 namespace App\Controller;
 
 use App\Presenter;
-use Classes;
+use Fuel\Aliases;
 
-class Welcome extends Classes\Controller\Base
+class Welcome extends Aliases\Controller\Base
 {
 	public function action_index()
 	{
-		$presenter = $this->app->forge('App\\Presenter\\Welcome');
+		$presenter = $this->app->forge('App\Presenter\Welcome');
 		$presenter->set('input', $this->app->env->input, false);
 		return $presenter;
 	}
