@@ -6,8 +6,8 @@
 	"require": {
 		"php":          ">=5.3.0",
 
-		"fuel/kernel":  "dev-master",
-		"fuel/core":    "dev-master",
-		"fuel/oil":     "dev-master"
+		"fuel/kernel":  "2.0.0-beta1",
+		"fuel/core":    "2.0.0-alpha1",
+		"fuel/oil":     "2.0.0-alpha1"
 	}
 }
