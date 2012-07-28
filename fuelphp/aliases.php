@@ -21,13 +21,19 @@ namespace Fuel\Aliases\Controller
 namespace Fuel\Aliases\Data
 {
 	abstract class Base extends \Fuel\Kernel\Data\Base {}
-	class Config extends \Fuel\Kernel\Data\Config {}
-	class Language extends \Fuel\Kernel\Data\Language {}
+}
+namespace Fuel\Aliases\Data\Config
+{
+	class Base extends \Fuel\Kernel\Data\Config\Base {}
+}
+namespace Fuel\Aliases\Data\Language
+{
+	class Base extends \Fuel\Kernel\Data\Language\Base {}
 }
 
 namespace Fuel\Aliases\DiC
 {
-	class Base extends \Fuel\Kernel\DiC\Base {}
+	class Base extends \Fuel\DiC\Base {}
 }
 
 namespace Fuel\Aliases\Loader

@@ -19,12 +19,25 @@ return array(
 	/**
 	 * Settings for cookies
 	 */
-	'cookie' => $new('cookie', array(
+	'session' => $new('session', array(
+		'name'       => 'fuelSession',
 		'lifetime'   => 0,
 		'path'       => '/',
 		'domain'     => null,
 		'secure'     => false,
-		'httpOnly'  => false,
+		'httpOnly'   => false,
+	)),
+
+	/**
+	 * Settings for cookies
+	 */
+	'cookie' => $new('cookie', array(
+		'prefix'     => 'fuel_',
+		'lifetime'   => 0,
+		'path'       => '/',
+		'domain'     => null,
+		'secure'     => false,
+		'httpOnly'   => false,
 	)),
 
 	/**

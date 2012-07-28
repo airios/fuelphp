@@ -46,10 +46,10 @@ class Main extends Application\Base
 	/**
 	 * Some application defaults, these will be overwritten by any config files found
 	 *
-	 * @param   Config  $config
+	 * @param   Config\Base  $config
 	 * @return  void
 	 */
-	protected function setConfig(Config $config)
+	protected function setConfig(Config\Base $config)
 	{
 		$config->set(array(
 			'log_level' => 0,
