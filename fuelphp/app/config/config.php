@@ -79,6 +79,13 @@ return array(
 	'security' => array(
 		'uriFilter'     => true,
 		'outputFilter'  => true,
+
+		// If you are using the IP WHitelist functionality add the IPs here.
+		// NOTE: This is mainly for convenience during development, and should not be enabled
+		// in production.
+		'ipWhitelist'     => array(
+			// '127.0.0.1',
+		),
 	),
 
 	/**
