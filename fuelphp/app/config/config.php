@@ -80,16 +80,11 @@ return array(
 		'uriFilter'     => true,
 		'outputFilter'  => true,
 
-		// If you wish your application to be whitelisted (i.e. not public), enable it here.
+		// If you are using the IP WHitelist functionality add the IPs here.
 		// NOTE: This is mainly for convenience during development, and should not be enabled
 		// in production.
-		'whitelist'     => array(
-			'enabled'           => false,
-			'forbiddenMessage'  => 'Forbidden',
-			'list'              => array(
-				// Add IP addresses to whitelist here.
-				'127.0.0.1',
-			),
+		'ipWhitelist'     => array(
+			// '127.0.0.1',
 		),
 	),
 
