@@ -58,7 +58,7 @@ return array(
 	'log' => array(
 		'dateFormat' => 'Y-m-d H:i:s',
 		// 'flags' => Log::L_ALL & ~Log::L_INFO,
-		// 'path' => $app->loader->path().'resources/logs/',
+		// 'path' => $app->loader->getPath().'resources/logs/',
 	),
 
 	/**
